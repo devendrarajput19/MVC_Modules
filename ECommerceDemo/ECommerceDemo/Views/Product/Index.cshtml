@@ -1,0 +1,75 @@
+﻿@model IPagedList<ECommerceDemo.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+@using PagedList.Mvc;
+@using PagedList;
+
+
+@*<p>
+        @Html.ActionLink("Create New", "Create")
+    </p>*@
+
+
+
+@using (Html.BeginForm())
+{
+    <div class="nav navbar-nav">
+
+        <h3> Product List </h3>
+    </div>
+
+    <div style="padding-top: 20px;">
+        <ul class="nav navbar-right">
+
+            @Html.Label("Search")
+
+            @Html.DropDownList("ProdCatId", ViewBag.ProdCatId as SelectList, "Select Category")
+
+            <input type="submit" value="Search" />
+        </ul>
+        </div>
+
+        }
+
+
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().ProdCatId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().ProdName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.First().ProdDescription)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProdCatId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProdName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProdDescription)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ProductId }) |
+                        @*@Html.ActionLink("Details", "Details", new { id = item.ProductId }) |*@
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ProductId })
+                    </td>
+                </tr>
+            }
+
+        </table>
+
+
+        @Html.PagedListPager(Model, i => Url.Action("Index", "Product", new { i, search = Request.QueryString["search"] }))
