@@ -75,5 +75,26 @@ namespace WEBAPI_Project.Controllers
             return Ok(check_emp);
         }
 
+        [Route("del")]
+        public IHttpActionResult DeleteEmployee(int empId)
+        {
+            if(empId < 0)
+            {
+                return BadRequest();
+            }
+            EmployeeEnterpriseEntities db = new EmployeeEnterpriseEntities();
+            var result = db.Employees.Where(x => x.EmployeeID == empId).FirstOrDefault();
+            if(result != null)
+            {
+                db.Entry(result).State = System.Data.Entity.EntityState.Deleted;
+                db.SaveChanges();
+            }
+            else
+            {
+                return BadRequest("Employee ID is not valid");
+            }
+            return Ok();
+        }
+
     }
 }
