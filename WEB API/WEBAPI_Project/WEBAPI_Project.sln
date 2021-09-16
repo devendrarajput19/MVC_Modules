@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEBAPI_Project", "WEBAPI_Project\WEBAPI_Project.csproj", "{A22CB90B-8D52-438F-9DC5-51751DAD1456}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEBAPI_Post_Project", "WEBAPI_Post_Project\WEBAPI_Post_Project.csproj", "{852B2C14-90C9-4AB0-8C6A-D38E62EC6323}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GETMETHOD_with_HTTPCLIENT", "GETMETHOD_with_HTTPCLIENT\GETMETHOD_with_HTTPCLIENT.csproj", "{D2ED53D0-4F01-44DC-9E08-AA8439D36A5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{A22CB90B-8D52-438F-9DC5-51751DAD1456}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A22CB90B-8D52-438F-9DC5-51751DAD1456}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A22CB90B-8D52-438F-9DC5-51751DAD1456}.Release|Any CPU.Build.0 = Release|Any CPU
-		{852B2C14-90C9-4AB0-8C6A-D38E62EC6323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{852B2C14-90C9-4AB0-8C6A-D38E62EC6323}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{852B2C14-90C9-4AB0-8C6A-D38E62EC6323}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{852B2C14-90C9-4AB0-8C6A-D38E62EC6323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2ED53D0-4F01-44DC-9E08-AA8439D36A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2ED53D0-4F01-44DC-9E08-AA8439D36A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2ED53D0-4F01-44DC-9E08-AA8439D36A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2ED53D0-4F01-44DC-9E08-AA8439D36A5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

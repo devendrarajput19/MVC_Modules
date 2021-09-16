@@ -1,0 +1,2 @@
+C:\Devendra\Programs\MVC\MVC Modules\WEB API\WEBAPI_Project\GETMETHOD_with_HTTPCLIENT\obj\Debug\GETMETHOD_with_HTTPCLIENT.csprojAssemblyReference.cache
+C:\Devendra\Programs\MVC\MVC Modules\WEB API\WEBAPI_Project\GETMETHOD_with_HTTPCLIENT\obj\Debug\GETMETHOD_with_HTTPCLIENT.csproj.CoreCompileInputs.cache
